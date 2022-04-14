@@ -41,5 +41,15 @@ namespace ExamenXamarin.Repository
             File.WriteAllText("Livraison.json", data);
             return livraison;
         }
+
+
+        public List<LivraisonModel> GetAll()
+        {
+            LivraisonModel[] copy = new LivraisonModel[livraisons.Count];
+            livraisons.CopyTo(copy);
+            return copy.ToList();
+        }
+
+
     }
 }

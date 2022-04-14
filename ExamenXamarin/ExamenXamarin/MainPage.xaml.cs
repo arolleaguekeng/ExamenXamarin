@@ -52,9 +52,10 @@ namespace ExamenXamarin
                 {
                     var livraison = new LivraisonModel($"ref{i}", "date", "12h", $"bafoussam{i}");
                     livraisons.Add(livraison);
-                    CvProduct.ItemsSource = livraisons;
+                    
                 }
-                
+                CvProduct.ItemsSource = livraisons;
+
             }
             catch (Exception ex)
             {

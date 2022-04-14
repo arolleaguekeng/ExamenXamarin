@@ -9,10 +9,10 @@ namespace ExamenXamarin
     public partial class App : Application
     {
         private readonly Func<Stream, string, Task<bool>> saveSignatureDelegate;
-        public App(Func<Stream, string, Task<bool>> saveSignature)
+        public App()
         {
             InitializeComponent();
-            saveSignatureDelegate = saveSignature;
+            //saveSignatureDelegate = saveSignature;
 
             MainPage = new MainPage();
         }

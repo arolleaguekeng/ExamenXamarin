@@ -6,48 +6,50 @@
              mc:Ignorable="d"
              x:Class="ExamenXamarin.LivraisonDetailPage">
     <ContentPage.Content>
-        <Label Text="Details " FontSize="Header" HorizontalTextAlignment="Center"
+        <RelativeLayout>
+            <Label Text="Details " FontSize="Header" HorizontalTextAlignment="Center"
                                 FontFamily="MyAwesomeCustomFont"
                                 Grid.Row="0"/>
 
-        <StackLayout>
-            <Label Text="Refenrence" />
-            <Label Text="{Binding Livraison.Reference}"
+            <RelativeLayout>
+                <Label Text="Refenrence"/>
+                <Label Text="{Binding Livraison.Reference}"
                                     FontAttributes="Bold"
                                     TextColor="CornflowerBlue"
                                    VerticalOptions="End"
                                    LineBreakMode="TailTruncation"/>
-        </StackLayout>
+            </RelativeLayout>
 
-        <StackLayout>
-            <Label Text="Code"  />
-            <Label Text="{Binding Livraison.date}"
+            <StackLayout>
+                <Label Text="Code"  />
+                <Label Text="{Binding Livraison.Date}"
                                     FontAttributes="Bold"
                                     TextColor="CornflowerBlue"
                                    VerticalOptions="End"
                                    LineBreakMode="TailTruncation"/>
-        </StackLayout>
-        <StackLayout>
-            <Label Text="Heure de livraison"  />
-            <Label Text="{Binding Livraison.Heure}"
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Heure de livraison"  />
+                <Label Text="{Binding Livraison.Heure}"
                                     FontAttributes="Bold"
                                     TextColor="CornflowerBlue"
                                    VerticalOptions="End"
                                    LineBreakMode="TailTruncation"/>
-        </StackLayout>
+            </StackLayout>
 
-        <StackLayout>
-            <Label Text="Lieux de la livraison"  />
-            <Label Text="{Binding Livraison.lieux}"
+            <StackLayout>
+                <Label Text="Lieux de la livraison"  />
+                <Label Text="{Binding Livraison.Lieux}"
                                     FontAttributes="Bold"
                                     TextColor="CornflowerBlue"
                                    VerticalOptions="End"
                                    LineBreakMode="TailTruncation"/>
-        </StackLayout>
+            </StackLayout>
 
-        <StackLayout>
-            <Button Text="Signer"/>
-            <Button Text="Supprimer"/>
-        </StackLayout>
+            <StackLayout>
+                <Button Text="Signer"/>
+                <Button Text="Supprimer"/>
+            </StackLayout>
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -5,8 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ExamenXamarin.MainPage">
-    <StackLayout>
-        <Label Text="ExamXamarin"
+    <!--<StackLayout>
+        <Label Text="EshopAguekeng"
                            FontSize="35"
                            FontAttributes="Bold"
                            FontFamily="MyAwesomeCustomFont"
@@ -14,7 +14,7 @@
                            VerticalOptions="Center"
                            TextColor="Gold"
                            HorizontalOptions="StartAndExpand"/>
-    </StackLayout>
+    </StackLayout>-->
     <Grid>
         <RefreshView x:Name="Rv" Refreshing="Rv_Refreshing"
                      IsRefreshing="False">
@@ -58,19 +58,7 @@
                                                VerticalOptions="End"
                                                HorizontalOptions="End"/>
                                         </StackLayout>
-                                        <StackLayout Orientation="Horizontal"
-                                                 Spacing="20"
-                                                 Margin="0,0,10,0">
-                                            <StackLayout Spacing="0">
-                                                <ImageButton BackgroundColor="Transparent">
-                                                    <ImageButton.Source>
-                                                        <FontImageSource Glyph="&#xf004;"
-                                                     FontFamily="FontFaRegular400"
-                                                     Color="#666"/>
-                                                    </ImageButton.Source>
-                                                </ImageButton>
-                                            </StackLayout>
-                                        </StackLayout>
+
 
                                     </StackLayout>
                                 </Grid>
